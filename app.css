@@ -1,0 +1,138 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    color: #252525;
+
+}
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.mainBox {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+        padding: 20px;
+
+
+
+}
+
+.cardBox {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+}
+
+.card {
+    max-width: calc(20% - 30px);
+    min-width: calc(20% - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    aspect-ratio: 9/12;
+    transition: background-color 0.3s ease;
+
+}
+
+.card:hover {
+    background-color: rgb(205, 205, 205);
+
+}
+
+aside {
+    flex: 2;
+    height: 100vh;             /* 設定滿高 */
+    overflow-y: auto;          /* 啟用垂直捲軸 */
+    overflow-x: hidden;        /* 水平不出現捲軸 */
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+
+/* 測試 */
+.code-container {
+    position: relative;
+    background: #f6f8fa;
+    border-radius: 6px;
+    overflow: auto;
+    margin: 1em 0;
+    padding: 20px;
+
+}
+
+.copy-button {
+    position: absolute;
+    top: 88px;
+    right: 8px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.copy-button:hover {
+    background: #ccc;
+}
+pre[class*=language-] {
+    padding: 0px;
+
+}
