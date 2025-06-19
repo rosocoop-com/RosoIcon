@@ -6,19 +6,20 @@ body {
     color: #252525;
 
 }
-h1,h2,h3{
-    font-family: 'IPST-Bold.ttf';
+
+h1,
+h2,
+h3 {
+    font-family: 'IPST-Bold';
 }
+
 .mainBox {
     flex: 6;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: flex-start;
     flex-wrap: wrap;
-        padding: 20px;
-
-
-
+    padding: 20px;
 }
 
 .cardBox {
@@ -27,8 +28,8 @@ h1,h2,h3{
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
@@ -52,11 +53,14 @@ h1,h2,h3{
 
 aside {
     flex: 2;
-    height: 100vh;             /* 設定滿高 */
-    overflow-y: auto;          /* 啟用垂直捲軸 */
-    overflow-x: hidden;        /* 水平不出現捲軸 */
+    height: 100vh;
+    /* 設定滿高 */
+    overflow-y: auto;
+    /* 啟用垂直捲軸 */
+    overflow-x: hidden;
+    /* 水平不出現捲軸 */
     background-color: #f4f4f4;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -86,6 +90,7 @@ aside {
 .copy-button:hover {
     background: #ccc;
 }
+
 pre[class*=language-] {
     padding: 0px;
 
