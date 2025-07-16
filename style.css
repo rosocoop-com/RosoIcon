@@ -1,6 +1,6 @@
 .roso-ico{display: inline-block; width: 10px;aspect-ratio: 1/1;color: white;background-size: cover;}
 
-.taco-ri { -webkit-mask: url(./icons/toco.svg) no-repeat center; mask: url(./icons/toco.svg) no-repeat center; background-color: white; }
+.taco-ri { -webkit-mask: url(./icons/taco.svg) no-repeat center; mask: url(./icons/taco.svg) no-repeat center; background-color: white; }
 .career-ri { -webkit-mask: url(./icons/career.svg) no-repeat center; mask: url(./icons/career.svg) no-repeat center; background-color: white; }
 .history-ri { -webkit-mask: url(./icons/history.svg) no-repeat center; mask: url(./icons/history.svg) no-repeat center; background-color: white; }
 .partner-ri { -webkit-mask: url(./icons/partner.svg) no-repeat center; mask: url(./icons/partner.svg) no-repeat center; background-color: white; }
@@ -11,6 +11,7 @@
 .activity-ri { -webkit-mask: url(./icons/activity.svg) no-repeat center; mask: url(./icons/activity.svg) no-repeat center; background-color: white; }
 .award-ri { -webkit-mask: url(./icons/award.svg) no-repeat center; mask: url(./icons/award.svg) no-repeat center; background-color: white; }
 .media-ri { -webkit-mask: url(./icons/media.svg) no-repeat center; mask: url(./icons/media.svg) no-repeat center; background-color: white; }
+.logo-f-o { -webkit-mask: url(./icons/Logo-F-O.svg) no-repeat center; mask: url(./icons/Logo-F-O.svg) no-repeat center; background-color: white; }
 
 
 
