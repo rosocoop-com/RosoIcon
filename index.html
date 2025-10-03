@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROSO Icons</title>
-    <link rel="stylesheet" href="./style-min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <link rel="stylesheet" href="./app.css">
     <style>
-        body{
-                font-family: "IPST-Regular", sans-serif;
+        body {
+            font-family: "IPST-Regular", sans-serif;
         }
     </style>
 
 </head>
 
 <body>
-    <aside>
+    <header class="topbar" role="banner">
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-controls="site-aside"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1 class="topbar-title">ROSO Icons</h1>
+    </header>
+
+    <div class="menu-overlay" id="menuOverlay" tabindex="-1" aria-hidden="true"></div>
+
+    <aside id="site-aside">
         <div class="code-container">
 
 
@@ -38,6 +50,7 @@
                 <li><code><strong>roso-ico</strong></code>：通用樣式（必加）</li>
                 <li><code><strong>w200</strong></code>：寬度，支援 <code>1 ~ 220</code></li>
                 <li><code><strong>black</strong></code>：顏色 class（詳見下方）</li>
+                <li><code><strong>More</strong></code>：如有標註「Light」則為適用於深色背景，經過視覺修正</li>
             </ul>
 
             <hr>
@@ -80,126 +93,199 @@
                             style="width: 16px; height: 16px; border-radius: 50%; display: inline-block;"></span>
                         <span>olive</span>
                     </div>
+
+
                 </div>
 
             </div>
 
             <hr>
         </div>
-
-        <!-- 複製邏輯 -->
         <script>
             function copyCodeToClipboard(button) {
-                const code = button.nextElementSibling.innerText;
-                navigator.clipboard.writeText(code).then(() => {
+                let codeText = '';
+                const prev = button.previousElementSibling;
+                if (prev && prev.tagName && prev.tagName.toLowerCase() === 'pre') {
+                    const codeEl = prev.querySelector('code');
+                    codeText = codeEl ? codeEl.innerText : prev.innerText;
+                } else {
+                    const container = button.parentElement || document;
+                    const codeEl = container.querySelector('pre code');
+                    codeText = codeEl ? codeEl.innerText : '';
+                }
+
+                if (!codeText) {
+                    console.warn('No code block found to copy');
+                    return;
+                }
+
+                navigator.clipboard.writeText(codeText).then(() => {
                     button.textContent = '已複製';
                     setTimeout(() => button.textContent = '複製', 1500);
+                }).catch(err => {
+                    console.error('Copy failed', err);
                 });
             }
         </script>
-
     </aside>
-    <div class="mainBox">
-        <h1 style="width: 100%;">ROSO Icons</h1>
+    <div class="container">
+        <div class="mainBox">
+            <h1 style="width: 100%;margin-block-end:0px;">ROSO Icons</h1>
+            <span>可以直接點選 Icon 即可複製語法，收錄圖示陸續增加中。</span>
 
-        <div class="cardBox">
-            <div class="card" data-value='<i class="career-ri roso-ico w200 black"></i>'>
-                <i class="career-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">career</p>
+            <div class="cardBox">
+                <div class="card" data-value='<i class="career-ri roso-ico w200 black"></i>'>
+                    <i class="career-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">career</p>
+                </div>
+
+                <div class="card" data-value='<i class="taco-ri roso-ico w200 black"></i>'>
+                    <i class="taco-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">taco</p>
+                </div>
+
+                <div class="card" data-value='<i class="history-ri roso-ico w200 black"></i>'>
+                    <i class="history-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">history</p>
+                </div>
+
+                <div class="card" data-value='<i class="partner-ri roso-ico w200 black"></i>'>
+                    <i class="partner-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">partner</p>
+                </div>
+
+                <div class="card" data-value='<i class="team-ri roso-ico w200 black"></i>'>
+                    <i class="team-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">team</p>
+                </div>
+
+                <div class="card" data-value='<i class="product-ri roso-ico w200 black"></i>'>
+                    <i class="product-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">product</p>
+                </div>
+
+                <div class="card" data-value='<i class="digital_craft-ri roso-ico w200 black"></i>'>
+                    <i class="digital_craft-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">digital_craft</p>
+                </div>
+
+                <div class="card" data-value='<i class="product2-ri roso-ico w200 black"></i>'>
+                    <i class="product2-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">product2</p>
+                </div>
+
+                <div class="card" data-value='<i class="activity-ri roso-ico w200 black"></i>'>
+                    <i class="activity-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">activity</p>
+                </div>
+
+                <div class="card" data-value='<i class="award-ri roso-ico w200 black"></i>'>
+                    <i class="award-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">award</p>
+                </div>
+
+                <div class="card" data-value='<i class="media-ri roso-ico w200 black"></i>'>
+                    <i class="media-ri roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">media</p>
+                </div>
+
+                <div class="card" data-value='<i class="logo-f-o roso-ico w200 black"></i>'>
+                    <i class="logo-f-o roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">LOGO-1</p>
+                </div>
+
+                <div class="card" data-value='<i class="logo-i roso-ico w200 black"></i>'>
+                    <i class="logo-i roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">LOGO-Icon</p>
+                </div>
+
+                <div class="card" data-value='<i class="logo-i-h roso-ico w200 black"></i>'>
+                    <i class="logo-i-h roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">LOGO-Icon-Hollow</p>
+                </div>
+
+                <div class="card" data-value='<i class="logo-F-O_25_D roso-ico w200 black"></i>'>
+                    <i class="logo-F-O_25_D roso-ico black" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">LOGO-New-Dark</p>
+                </div>
+
+                <div class="card" data-value='<i class="logo-F-O_25_L roso-ico w200 white"></i>'>
+                    <i class="logo-F-O_25_L roso-ico gray-light" style="width: 80%;"></i>
+                    <p style="width: 100%;text-align: center;">LOGO-New-Light</p>
+                </div>
+
             </div>
 
-            <div class="card" data-value='<i class="taco-ri roso-ico w200 black"></i>'>
-                <i class="taco-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">taco</p>
-            </div>
-
-            <div class="card" data-value='<i class="history-ri roso-ico w200 black"></i>'>
-                <i class="history-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">history</p>
-            </div>
-
-            <div class="card" data-value='<i class="partner-ri roso-ico w200 black"></i>'>
-                <i class="partner-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">partner</p>
-            </div>
-
-            <div class="card" data-value='<i class="team-ri roso-ico w200 black"></i>'>
-                <i class="team-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">team</p>
-            </div>
-
-            <div class="card" data-value='<i class="product-ri roso-ico w200 black"></i>'>
-                <i class="product-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">product</p>
-            </div>
-
-            <div class="card" data-value='<i class="digital_craft-ri roso-ico w200 black"></i>'>
-                <i class="digital_craft-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">digital_craft</p>
-            </div>
-
-            <div class="card" data-value='<i class="product2-ri roso-ico w200 black"></i>'>
-                <i class="product2-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">product2</p>
-            </div>
-
-            <div class="card" data-value='<i class="activity-ri roso-ico w200 black"></i>'>
-                <i class="activity-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">activity</p>
-            </div>
-
-            <div class="card" data-value='<i class="award-ri roso-ico w200 black"></i>'>
-                <i class="award-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">award</p>
-            </div>
-
-            <div class="card" data-value='<i class="media-ri roso-ico w200 black"></i>'>
-                <i class="media-ri roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">media</p>
-            </div>
-
-            <div class="card" data-value='<i class="logo-f-o roso-ico w200 black"></i>'>
-                <i class="logo-f-o roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">LOGO-1</p>
-            </div>
-
-            <div class="card" data-value='<i class="logo-i roso-ico w200 black"></i>'>
-                <i class="logo-i roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">LOGO-Icon</p>
-            </div>
-
-            <div class="card" data-value='<i class="logo-i-h roso-ico w200 black"></i>'>
-                <i class="logo-i-h roso-ico black" style="width: 80%;"></i>
-                <p style="width: 100%;text-align: center;">LOGO-Icon-Hollow</p>
-            </div>
         </div>
-
-
-
     </div>
-</body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const cards = document.querySelectorAll(".card");
 
-        cards.forEach(card => {
-            card.addEventListener("click", () => {
-                const dataValue = card.getAttribute("data-value");
-                if (!dataValue) return;
 
-                // 複製到剪貼簿
-                navigator.clipboard.writeText(dataValue)
-                    .then(() => {
-                        console.log("done");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Card click -> copy icon markup
+            const cards = document.querySelectorAll(".card");
 
-                    })
-                    .catch(err => {
-                        console.error("複製失敗", err);
-                    });
+            cards.forEach(card => {
+                card.addEventListener("click", () => {
+                    const dataValue = card.getAttribute("data-value");
+                    if (!dataValue) return;
+                    navigator.clipboard.writeText(dataValue)
+                        .then(() => {
+                            console.log("copied");
+                        })
+                        .catch(err => {
+                            console.error("複製失敗", err);
+                        });
+                });
             });
+            const hamburger = document.getElementById('hamburgerBtn');
+            const aside = document.getElementById('site-aside');
+            const overlay = document.getElementById('menuOverlay');
+
+            function openMenu() {
+                aside.classList.add('open');
+                overlay.classList.add('show');
+                hamburger.setAttribute('aria-expanded', 'true');
+                overlay.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeMenu() {
+                aside.classList.remove('open');
+                overlay.classList.remove('show');
+                hamburger.setAttribute('aria-expanded', 'false');
+                overlay.setAttribute('aria-hidden', 'true');
+            }
+
+            if (hamburger) {
+                hamburger.addEventListener('click', function (e) {
+                    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+                    if (expanded) closeMenu();
+                    else openMenu();
+                });
+            }
+
+            if (overlay) overlay.addEventListener('click', closeMenu);
+
+            // Close on escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    closeMenu();
+                }
+            });
+            if (aside) {
+                aside.addEventListener('click', function (e) {
+                    const tag = e.target.tagName.toLowerCase();
+                    if (tag === 'a' || tag === 'button') {
+                        if (window.innerWidth <= 768) closeMenu();
+                    }
+                });
+            }
         });
-    });
-</script>
-<script src="https://api-webfont.twintype.co/embed.js?site=https://icons.roso.ai&amp;font=IPST-Regular.ttf,IPST-Light.ttf,IPST-Bold.ttf"></script>
+    </script>
+    <script
+        src="https://api-webfont.twintype.co/embed.js?site=https://icons.roso.ai&amp;font=IPST-Regular.ttf,IPST-Light.ttf,IPST-Bold.ttf">
+    </script>
+
+</body>
 
 </html>

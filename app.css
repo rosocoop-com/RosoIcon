@@ -13,17 +13,26 @@ h3 {
     font-family: 'IPST-Bold';
     font-weight: normal;
 }
+.container{
+    flex: 6;
+    display: flex;
+    align-content: flex-start;
+    padding: 20px;
+}
 
 .mainBox {
     flex: 6;
     display: flex;
-    justify-content: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 0px;
+    gap: 10px;
+    justify-content: flex-start;
 }
 
 .cardBox {
+    box-sizing: border-box;
+
     padding: 10px;
     display: flex;
     gap: 20px;
@@ -34,8 +43,8 @@ h3 {
 }
 
 .card {
-    max-width: calc(20% - 30px);
-    min-width: calc(20% - 60px);
+    box-sizing: border-box;
+    width: calc(10% - 10px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,6 +71,69 @@ aside {
     /* 水平不出現捲軸 */
     background-color: #f4f4f4;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Topbar / Hamburger */
+.topbar {
+    display: none;
+    /* shown on small screens */
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.topbar-title {
+    margin: 0;
+    font-size: 18px;
+}
+
+.hamburger {
+    width: 38px;
+    height: 36px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+}
+
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    opacity: 0;
+    transition: opacity 0.18s ease;
+}
+
+.menu-overlay.show {
+    display: block;
+    opacity: 1;
+}
+
+/* when aside is open on mobile */
+#site-aside.open {
+    transform: translateX(0%);
+}
+
+#site-aside {
+    transition: transform 0.22s ease;
 }
 
 
@@ -95,4 +167,78 @@ aside {
 pre[class*=language-] {
     padding: 0px;
 
+}
+
+/* Responsive: Mobile first adjustments */
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .topbar {
+        display: flex;
+    }
+
+    /* collapse aside into an off-canvas panel */
+    aside {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 78%;
+        max-width: 320px;
+        transform: translateX(-110%);
+        z-index: 50;
+        height: 100vh;
+        box-shadow: 2px 0 12px rgba(0, 0, 0, 0.2);
+        background-color: #f4f4f4;
+    }
+
+    .mainBox {
+        /* make main content take full width */
+        padding: 12px;
+        margin-top: 8px;
+    }
+
+    .card {
+        /* make cards larger and responsive */
+        max-width: calc(50% - 16px);
+        min-width: calc(50% - 32px);
+        aspect-ratio: 4/5;
+    }
+
+    .copy-button {
+        top: 64px;
+        /* adjust within smaller header */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Keep two cards per row on small phones */
+    .card {
+        max-width: calc(50% - 12px);
+        min-width: calc(50% - 12px);
+        aspect-ratio: 4/5;
+    }
+
+    .topbar-title {
+        font-size: 16px;
+    }
+}
+
+/* Ensure aside is visible on larger screens */
+@media (min-width: 901px) {
+    .topbar {
+        display: none;
+    }
+
+    aside {
+        position: relative;
+        transform: none;
+    }
+
+    .menu-overlay {
+        display: none !important;
+    }
 }
