@@ -1,274 +1,1121 @@
-.roso-ico{display: inline-block; width: 10px;aspect-ratio: 1/1;color: white;background-size: cover;}
+.roso-ico {
+    display: inline-block;
+    width: 10px;
+    aspect-ratio: 1/1;
+    color: white;
+    background-size: cover;
+}
 
-.taco-ri { -webkit-mask: url(./icons/taco.svg) no-repeat center; mask: url(./icons/taco.svg) no-repeat center; background-color: white; }
-.career-ri { -webkit-mask: url(./icons/career.svg) no-repeat center; mask: url(./icons/career.svg) no-repeat center; background-color: white; }
-.history-ri { -webkit-mask: url(./icons/history.svg) no-repeat center; mask: url(./icons/history.svg) no-repeat center; background-color: white; }
-.partner-ri { -webkit-mask: url(./icons/partner.svg) no-repeat center; mask: url(./icons/partner.svg) no-repeat center; background-color: white; }
-.team-ri { -webkit-mask: url(./icons/team.svg) no-repeat center; mask: url(./icons/team.svg) no-repeat center; background-color: white; }
-.product-ri { -webkit-mask: url(./icons/product.svg) no-repeat center; mask: url(./icons/product.svg) no-repeat center; background-color: white; }
-.cart-ri { -webkit-mask: url(./icons/cart.svg) no-repeat center; mask: url(./icons/cart.svg) no-repeat center; background-color: white; }
-.digital_craft-ri { -webkit-mask: url(./icons/digital_craft.svg) no-repeat center; mask: url(./icons/digital_craft.svg) no-repeat center; background-color: white; }
-.product2-ri { -webkit-mask: url(./icons/product2.svg) no-repeat center; mask: url(./icons/product2.svg) no-repeat center; background-color: white; }
-.activity-ri { -webkit-mask: url(./icons/activity.svg) no-repeat center; mask: url(./icons/activity.svg) no-repeat center; background-color: white; }
-.award-ri { -webkit-mask: url(./icons/award.svg) no-repeat center; mask: url(./icons/award.svg) no-repeat center; background-color: white; }
-.media-ri { -webkit-mask: url(./icons/media.svg) no-repeat center; mask: url(./icons/media.svg) no-repeat center; background-color: white; }
-.logo-f-o { -webkit-mask: url(./icons/Logo-F-O.svg) no-repeat center; mask: url(./icons/Logo-F-O.svg) no-repeat center; background-color: white; }
-.logo-i { -webkit-mask: url(./icons/Logo-I.svg) no-repeat center; mask: url(./icons/Logo-I.svg) no-repeat center; background-color: white; }
-.logo-i-h { -webkit-mask: url(./icons/Logo-I-H.svg) no-repeat center; mask: url(./icons/Logo-I-H.svg) no-repeat center; background-color: white; }
-.logo-F-O_25_D { -webkit-mask: url(./icons/Logo-F-O_25_D.svg) no-repeat center; mask: url(./icons/Logo-F-O_25_D.svg) no-repeat center; background-color: white; }
-.logo-F-O_25_L { -webkit-mask: url(./icons/Logo-F-O_25_L.svg) no-repeat center; mask: url(./icons/Logo-F-O_25_L.svg) no-repeat center; background-color: white; }
-.nextpage-ri { -webkit-mask: url(./icons/next_page.svg) no-repeat center; mask: url(./icons/next_page.svg) no-repeat center; background-color: white; }
-.previouspage-ri { -webkit-mask: url(./icons/previous_page.svg) no-repeat center; mask: url(./icons/previous_page.svg) no-repeat center; background-color: white; }
+.taco-ri {
+    -webkit-mask: url(./icons/taco.svg) no-repeat center;
+    mask: url(./icons/taco.svg) no-repeat center;
+    background-color: white;
+}
+
+.career-ri {
+    -webkit-mask: url(./icons/career.svg) no-repeat center;
+    mask: url(./icons/career.svg) no-repeat center;
+    background-color: white;
+}
+
+.history-ri {
+    -webkit-mask: url(./icons/history.svg) no-repeat center;
+    mask: url(./icons/history.svg) no-repeat center;
+    background-color: white;
+}
+
+.partner-ri {
+    -webkit-mask: url(./icons/partner.svg) no-repeat center;
+    mask: url(./icons/partner.svg) no-repeat center;
+    background-color: white;
+}
+
+.team-ri {
+    -webkit-mask: url(./icons/team.svg) no-repeat center;
+    mask: url(./icons/team.svg) no-repeat center;
+    background-color: white;
+}
+
+.product-ri {
+    -webkit-mask: url(./icons/product.svg) no-repeat center;
+    mask: url(./icons/product.svg) no-repeat center;
+    background-color: white;
+}
+
+.cart-ri {
+    -webkit-mask: url(./icons/cart.svg) no-repeat center;
+    mask: url(./icons/cart.svg) no-repeat center;
+    background-color: white;
+}
+
+.digital_craft-ri {
+    -webkit-mask: url(./icons/digital_craft.svg) no-repeat center;
+    mask: url(./icons/digital_craft.svg) no-repeat center;
+    background-color: white;
+}
+
+.product2-ri {
+    -webkit-mask: url(./icons/product2.svg) no-repeat center;
+    mask: url(./icons/product2.svg) no-repeat center;
+    background-color: white;
+}
+
+.activity-ri {
+    -webkit-mask: url(./icons/activity.svg) no-repeat center;
+    mask: url(./icons/activity.svg) no-repeat center;
+    background-color: white;
+}
+
+.award-ri {
+    -webkit-mask: url(./icons/award.svg) no-repeat center;
+    mask: url(./icons/award.svg) no-repeat center;
+    background-color: white;
+}
+
+.media-ri {
+    -webkit-mask: url(./icons/media.svg) no-repeat center;
+    mask: url(./icons/media.svg) no-repeat center;
+    background-color: white;
+}
+
+.logo-f-o {
+    -webkit-mask: url(./icons/Logo-F-O.svg) no-repeat center;
+    mask: url(./icons/Logo-F-O.svg) no-repeat center;
+    background-color: white;
+}
+
+.logo-i {
+    -webkit-mask: url(./icons/Logo-I.svg) no-repeat center;
+    mask: url(./icons/Logo-I.svg) no-repeat center;
+    background-color: white;
+}
+
+.logo-i-h {
+    -webkit-mask: url(./icons/Logo-I-H.svg) no-repeat center;
+    mask: url(./icons/Logo-I-H.svg) no-repeat center;
+    background-color: white;
+}
+
+.logo-F-O_25_D {
+    -webkit-mask: url(./icons/Logo-F-O_25_D.svg) no-repeat center;
+    mask: url(./icons/Logo-F-O_25_D.svg) no-repeat center;
+    background-color: white;
+}
+
+.logo-F-O_25_L {
+    -webkit-mask: url(./icons/Logo-F-O_25_L.svg) no-repeat center;
+    mask: url(./icons/Logo-F-O_25_L.svg) no-repeat center;
+    background-color: white;
+}
+
+.nextpage-ri {
+    -webkit-mask: url(./icons/next_page.svg) no-repeat center;
+    mask: url(./icons/next_page.svg) no-repeat center;
+    background-color: white;
+}
+
+.previouspage-ri {
+    -webkit-mask: url(./icons/previous_page.svg) no-repeat center;
+    mask: url(./icons/previous_page.svg) no-repeat center;
+    background-color: white;
+}
+
+.w1 {
+    width: 1px;
+}
+
+.w2 {
+    width: 2px;
+}
+
+.w3 {
+    width: 3px;
+}
+
+.w4 {
+    width: 4px;
+}
+
+.w5 {
+    width: 5px;
+}
+
+.w6 {
+    width: 6px;
+}
+
+.w7 {
+    width: 7px;
+}
+
+.w8 {
+    width: 8px;
+}
+
+.w9 {
+    width: 9px;
+}
+
+.w10 {
+    width: 10px;
+}
+
+.w11 {
+    width: 11px;
+}
+
+.w12 {
+    width: 12px;
+}
+
+.w13 {
+    width: 13px;
+}
+
+.w14 {
+    width: 14px;
+}
+
+.w15 {
+    width: 15px;
+}
+
+.w16 {
+    width: 16px;
+}
+
+.w17 {
+    width: 17px;
+}
+
+.w18 {
+    width: 18px;
+}
+
+.w19 {
+    width: 19px;
+}
+
+.w20 {
+    width: 20px;
+}
+
+.w21 {
+    width: 21px;
+}
+
+.w22 {
+    width: 22px;
+}
+
+.w23 {
+    width: 23px;
+}
+
+.w24 {
+    width: 24px;
+}
+
+.w25 {
+    width: 25px;
+}
+
+.w26 {
+    width: 26px;
+}
+
+.w27 {
+    width: 27px;
+}
+
+.w28 {
+    width: 28px;
+}
+
+.w29 {
+    width: 29px;
+}
+
+.w30 {
+    width: 30px;
+}
+
+.w31 {
+    width: 31px;
+}
+
+.w32 {
+    width: 32px;
+}
+
+.w33 {
+    width: 33px;
+}
+
+.w34 {
+    width: 34px;
+}
+
+.w35 {
+    width: 35px;
+}
+
+.w36 {
+    width: 36px;
+}
+
+.w37 {
+    width: 37px;
+}
+
+.w38 {
+    width: 38px;
+}
+
+.w39 {
+    width: 39px;
+}
+
+.w40 {
+    width: 40px;
+}
+
+.w41 {
+    width: 41px;
+}
+
+.w42 {
+    width: 42px;
+}
+
+.w43 {
+    width: 43px;
+}
+
+.w44 {
+    width: 44px;
+}
+
+.w45 {
+    width: 45px;
+}
+
+.w46 {
+    width: 46px;
+}
+
+.w47 {
+    width: 47px;
+}
+
+.w48 {
+    width: 48px;
+}
+
+.w49 {
+    width: 49px;
+}
+
+.w50 {
+    width: 50px;
+}
+
+.w51 {
+    width: 51px;
+}
+
+.w52 {
+    width: 52px;
+}
+
+.w53 {
+    width: 53px;
+}
+
+.w54 {
+    width: 54px;
+}
+
+.w55 {
+    width: 55px;
+}
+
+.w56 {
+    width: 56px;
+}
+
+.w57 {
+    width: 57px;
+}
+
+.w58 {
+    width: 58px;
+}
+
+.w59 {
+    width: 59px;
+}
+
+.w60 {
+    width: 60px;
+}
+
+.w61 {
+    width: 61px;
+}
+
+.w62 {
+    width: 62px;
+}
+
+.w63 {
+    width: 63px;
+}
+
+.w64 {
+    width: 64px;
+}
+
+.w65 {
+    width: 65px;
+}
+
+.w66 {
+    width: 66px;
+}
+
+.w67 {
+    width: 67px;
+}
+
+.w68 {
+    width: 68px;
+}
+
+.w69 {
+    width: 69px;
+}
+
+.w70 {
+    width: 70px;
+}
+
+.w71 {
+    width: 71px;
+}
+
+.w72 {
+    width: 72px;
+}
+
+.w73 {
+    width: 73px;
+}
+
+.w74 {
+    width: 74px;
+}
+
+.w75 {
+    width: 75px;
+}
+
+.w76 {
+    width: 76px;
+}
+
+.w77 {
+    width: 77px;
+}
+
+.w78 {
+    width: 78px;
+}
+
+.w79 {
+    width: 79px;
+}
+
+.w80 {
+    width: 80px;
+}
+
+.w81 {
+    width: 81px;
+}
+
+.w82 {
+    width: 82px;
+}
+
+.w83 {
+    width: 83px;
+}
+
+.w84 {
+    width: 84px;
+}
+
+.w85 {
+    width: 85px;
+}
+
+.w86 {
+    width: 86px;
+}
+
+.w87 {
+    width: 87px;
+}
+
+.w88 {
+    width: 88px;
+}
+
+.w89 {
+    width: 89px;
+}
+
+.w90 {
+    width: 90px;
+}
+
+.w91 {
+    width: 91px;
+}
+
+.w92 {
+    width: 92px;
+}
+
+.w93 {
+    width: 93px;
+}
+
+.w94 {
+    width: 94px;
+}
+
+.w95 {
+    width: 95px;
+}
+
+.w96 {
+    width: 96px;
+}
+
+.w97 {
+    width: 97px;
+}
+
+.w98 {
+    width: 98px;
+}
+
+.w99 {
+    width: 99px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w101 {
+    width: 101px;
+}
+
+.w102 {
+    width: 102px;
+}
+
+.w103 {
+    width: 103px;
+}
+
+.w104 {
+    width: 104px;
+}
+
+.w105 {
+    width: 105px;
+}
+
+.w106 {
+    width: 106px;
+}
+
+.w107 {
+    width: 107px;
+}
+
+.w108 {
+    width: 108px;
+}
+
+.w109 {
+    width: 109px;
+}
+
+.w110 {
+    width: 110px;
+}
+
+.w111 {
+    width: 111px;
+}
+
+.w112 {
+    width: 112px;
+}
+
+.w113 {
+    width: 113px;
+}
+
+.w114 {
+    width: 114px;
+}
+
+.w115 {
+    width: 115px;
+}
+
+.w116 {
+    width: 116px;
+}
+
+.w117 {
+    width: 117px;
+}
+
+.w118 {
+    width: 118px;
+}
+
+.w119 {
+    width: 119px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.w121 {
+    width: 121px;
+}
+
+.w122 {
+    width: 122px;
+}
+
+.w123 {
+    width: 123px;
+}
+
+.w124 {
+    width: 124px;
+}
+
+.w125 {
+    width: 125px;
+}
+
+.w126 {
+    width: 126px;
+}
+
+.w127 {
+    width: 127px;
+}
+
+.w128 {
+    width: 128px;
+}
+
+.w129 {
+    width: 129px;
+}
+
+.w130 {
+    width: 130px;
+}
+
+.w131 {
+    width: 131px;
+}
+
+.w132 {
+    width: 132px;
+}
+
+.w133 {
+    width: 133px;
+}
+
+.w134 {
+    width: 134px;
+}
+
+.w135 {
+    width: 135px;
+}
+
+.w136 {
+    width: 136px;
+}
+
+.w137 {
+    width: 137px;
+}
+
+.w138 {
+    width: 138px;
+}
+
+.w139 {
+    width: 139px;
+}
+
+.w140 {
+    width: 140px;
+}
+
+.w141 {
+    width: 141px;
+}
+
+.w142 {
+    width: 142px;
+}
+
+.w143 {
+    width: 143px;
+}
+
+.w144 {
+    width: 144px;
+}
+
+.w145 {
+    width: 145px;
+}
+
+.w146 {
+    width: 146px;
+}
+
+.w147 {
+    width: 147px;
+}
+
+.w148 {
+    width: 148px;
+}
+
+.w149 {
+    width: 149px;
+}
+
+.w150 {
+    width: 150px;
+}
+
+.w151 {
+    width: 151px;
+}
+
+.w152 {
+    width: 152px;
+}
+
+.w153 {
+    width: 153px;
+}
+
+.w154 {
+    width: 154px;
+}
+
+.w155 {
+    width: 155px;
+}
+
+.w156 {
+    width: 156px;
+}
+
+.w157 {
+    width: 157px;
+}
+
+.w158 {
+    width: 158px;
+}
+
+.w159 {
+    width: 159px;
+}
+
+.w160 {
+    width: 160px;
+}
+
+.w161 {
+    width: 161px;
+}
+
+.w162 {
+    width: 162px;
+}
+
+.w163 {
+    width: 163px;
+}
+
+.w164 {
+    width: 164px;
+}
+
+.w165 {
+    width: 165px;
+}
+
+.w166 {
+    width: 166px;
+}
+
+.w167 {
+    width: 167px;
+}
+
+.w168 {
+    width: 168px;
+}
+
+.w169 {
+    width: 169px;
+}
+
+.w170 {
+    width: 170px;
+}
+
+.w171 {
+    width: 171px;
+}
+
+.w172 {
+    width: 172px;
+}
+
+.w173 {
+    width: 173px;
+}
+
+.w174 {
+    width: 174px;
+}
+
+.w175 {
+    width: 175px;
+}
+
+.w176 {
+    width: 176px;
+}
+
+.w177 {
+    width: 177px;
+}
+
+.w178 {
+    width: 178px;
+}
+
+.w179 {
+    width: 179px;
+}
+
+.w180 {
+    width: 180px;
+}
+
+.w181 {
+    width: 181px;
+}
+
+.w182 {
+    width: 182px;
+}
+
+.w183 {
+    width: 183px;
+}
+
+.w184 {
+    width: 184px;
+}
+
+.w185 {
+    width: 185px;
+}
+
+.w186 {
+    width: 186px;
+}
+
+.w187 {
+    width: 187px;
+}
+
+.w188 {
+    width: 188px;
+}
+
+.w189 {
+    width: 189px;
+}
+
+.w190 {
+    width: 190px;
+}
+
+.w191 {
+    width: 191px;
+}
+
+.w192 {
+    width: 192px;
+}
+
+.w193 {
+    width: 193px;
+}
+
+.w194 {
+    width: 194px;
+}
+
+.w195 {
+    width: 195px;
+}
+
+.w196 {
+    width: 196px;
+}
+
+.w197 {
+    width: 197px;
+}
+
+.w198 {
+    width: 198px;
+}
+
+.w199 {
+    width: 199px;
+}
+
+.w200 {
+    width: 200px;
+}
+
+.w201 {
+    width: 201px;
+}
+
+.w202 {
+    width: 202px;
+}
+
+.w203 {
+    width: 203px;
+}
+
+.w204 {
+    width: 204px;
+}
+
+.w205 {
+    width: 205px;
+}
+
+.w206 {
+    width: 206px;
+}
+
+.w207 {
+    width: 207px;
+}
+
+.w208 {
+    width: 208px;
+}
+
+.w209 {
+    width: 209px;
+}
+
+.w210 {
+    width: 210px;
+}
+
+.w211 {
+    width: 211px;
+}
+
+.w212 {
+    width: 212px;
+}
+
+.w213 {
+    width: 213px;
+}
+
+.w214 {
+    width: 214px;
+}
+
+.w215 {
+    width: 215px;
+}
+
+.w216 {
+    width: 216px;
+}
+
+.w217 {
+    width: 217px;
+}
+
+.w218 {
+    width: 218px;
+}
+
+.w219 {
+    width: 219px;
+}
+
+.w220 {
+    width: 220px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.gray-light {
+    background-color: #d3d3d3;
+}
+
+.gray-medium {
+    background-color: #808080;
+}
+
+.gray-dark {
+    background-color: #404040;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.teal {
+    background-color: teal;
+}
+
+.indigo {
+    background-color: indigo;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.skyblue {
+    background-color: skyblue;
+}
+
+.coral {
+    background-color: coral;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.olive {
+    background-color: olive;
+}
+
+.navy {
+    background-color: navy;
+}
 
 
+@font-face {
+    font-family: 'roso-prism-icons-vf';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(./roso_iconVF.woff2) format('woff2');
+}
 
-
-.w1 { width: 1px; }
-.w2 { width: 2px; }
-.w3 { width: 3px; }
-.w4 { width: 4px; }
-.w5 { width: 5px; }
-.w6 { width: 6px; }
-.w7 { width: 7px; }
-.w8 { width: 8px; }
-.w9 { width: 9px; }
-.w10 { width: 10px; }
-.w11 { width: 11px; }
-.w12 { width: 12px; }
-.w13 { width: 13px; }
-.w14 { width: 14px; }
-.w15 { width: 15px; }
-.w16 { width: 16px; }
-.w17 { width: 17px; }
-.w18 { width: 18px; }
-.w19 { width: 19px; }
-.w20 { width: 20px; }
-.w21 { width: 21px; }
-.w22 { width: 22px; }
-.w23 { width: 23px; }
-.w24 { width: 24px; }
-.w25 { width: 25px; }
-.w26 { width: 26px; }
-.w27 { width: 27px; }
-.w28 { width: 28px; }
-.w29 { width: 29px; }
-.w30 { width: 30px; }
-.w31 { width: 31px; }
-.w32 { width: 32px; }
-.w33 { width: 33px; }
-.w34 { width: 34px; }
-.w35 { width: 35px; }
-.w36 { width: 36px; }
-.w37 { width: 37px; }
-.w38 { width: 38px; }
-.w39 { width: 39px; }
-.w40 { width: 40px; }
-.w41 { width: 41px; }
-.w42 { width: 42px; }
-.w43 { width: 43px; }
-.w44 { width: 44px; }
-.w45 { width: 45px; }
-.w46 { width: 46px; }
-.w47 { width: 47px; }
-.w48 { width: 48px; }
-.w49 { width: 49px; }
-.w50 { width: 50px; }
-.w51 { width: 51px; }
-.w52 { width: 52px; }
-.w53 { width: 53px; }
-.w54 { width: 54px; }
-.w55 { width: 55px; }
-.w56 { width: 56px; }
-.w57 { width: 57px; }
-.w58 { width: 58px; }
-.w59 { width: 59px; }
-.w60 { width: 60px; }
-.w61 { width: 61px; }
-.w62 { width: 62px; }
-.w63 { width: 63px; }
-.w64 { width: 64px; }
-.w65 { width: 65px; }
-.w66 { width: 66px; }
-.w67 { width: 67px; }
-.w68 { width: 68px; }
-.w69 { width: 69px; }
-.w70 { width: 70px; }
-.w71 { width: 71px; }
-.w72 { width: 72px; }
-.w73 { width: 73px; }
-.w74 { width: 74px; }
-.w75 { width: 75px; }
-.w76 { width: 76px; }
-.w77 { width: 77px; }
-.w78 { width: 78px; }
-.w79 { width: 79px; }
-.w80 { width: 80px; }
-.w81 { width: 81px; }
-.w82 { width: 82px; }
-.w83 { width: 83px; }
-.w84 { width: 84px; }
-.w85 { width: 85px; }
-.w86 { width: 86px; }
-.w87 { width: 87px; }
-.w88 { width: 88px; }
-.w89 { width: 89px; }
-.w90 { width: 90px; }
-.w91 { width: 91px; }
-.w92 { width: 92px; }
-.w93 { width: 93px; }
-.w94 { width: 94px; }
-.w95 { width: 95px; }
-.w96 { width: 96px; }
-.w97 { width: 97px; }
-.w98 { width: 98px; }
-.w99 { width: 99px; }
-.w100 { width: 100px; }
-.w101 { width: 101px; }
-.w102 { width: 102px; }
-.w103 { width: 103px; }
-.w104 { width: 104px; }
-.w105 { width: 105px; }
-.w106 { width: 106px; }
-.w107 { width: 107px; }
-.w108 { width: 108px; }
-.w109 { width: 109px; }
-.w110 { width: 110px; }
-.w111 { width: 111px; }
-.w112 { width: 112px; }
-.w113 { width: 113px; }
-.w114 { width: 114px; }
-.w115 { width: 115px; }
-.w116 { width: 116px; }
-.w117 { width: 117px; }
-.w118 { width: 118px; }
-.w119 { width: 119px; }
-.w120 { width: 120px; }
-.w121 { width: 121px; }
-.w122 { width: 122px; }
-.w123 { width: 123px; }
-.w124 { width: 124px; }
-.w125 { width: 125px; }
-.w126 { width: 126px; }
-.w127 { width: 127px; }
-.w128 { width: 128px; }
-.w129 { width: 129px; }
-.w130 { width: 130px; }
-.w131 { width: 131px; }
-.w132 { width: 132px; }
-.w133 { width: 133px; }
-.w134 { width: 134px; }
-.w135 { width: 135px; }
-.w136 { width: 136px; }
-.w137 { width: 137px; }
-.w138 { width: 138px; }
-.w139 { width: 139px; }
-.w140 { width: 140px; }
-.w141 { width: 141px; }
-.w142 { width: 142px; }
-.w143 { width: 143px; }
-.w144 { width: 144px; }
-.w145 { width: 145px; }
-.w146 { width: 146px; }
-.w147 { width: 147px; }
-.w148 { width: 148px; }
-.w149 { width: 149px; }
-.w150 { width: 150px; }
-.w151 { width: 151px; }
-.w152 { width: 152px; }
-.w153 { width: 153px; }
-.w154 { width: 154px; }
-.w155 { width: 155px; }
-.w156 { width: 156px; }
-.w157 { width: 157px; }
-.w158 { width: 158px; }
-.w159 { width: 159px; }
-.w160 { width: 160px; }
-.w161 { width: 161px; }
-.w162 { width: 162px; }
-.w163 { width: 163px; }
-.w164 { width: 164px; }
-.w165 { width: 165px; }
-.w166 { width: 166px; }
-.w167 { width: 167px; }
-.w168 { width: 168px; }
-.w169 { width: 169px; }
-.w170 { width: 170px; }
-.w171 { width: 171px; }
-.w172 { width: 172px; }
-.w173 { width: 173px; }
-.w174 { width: 174px; }
-.w175 { width: 175px; }
-.w176 { width: 176px; }
-.w177 { width: 177px; }
-.w178 { width: 178px; }
-.w179 { width: 179px; }
-.w180 { width: 180px; }
-.w181 { width: 181px; }
-.w182 { width: 182px; }
-.w183 { width: 183px; }
-.w184 { width: 184px; }
-.w185 { width: 185px; }
-.w186 { width: 186px; }
-.w187 { width: 187px; }
-.w188 { width: 188px; }
-.w189 { width: 189px; }
-.w190 { width: 190px; }
-.w191 { width: 191px; }
-.w192 { width: 192px; }
-.w193 { width: 193px; }
-.w194 { width: 194px; }
-.w195 { width: 195px; }
-.w196 { width: 196px; }
-.w197 { width: 197px; }
-.w198 { width: 198px; }
-.w199 { width: 199px; }
-.w200 { width: 200px; }
-.w201 { width: 201px; }
-.w202 { width: 202px; }
-.w203 { width: 203px; }
-.w204 { width: 204px; }
-.w205 { width: 205px; }
-.w206 { width: 206px; }
-.w207 { width: 207px; }
-.w208 { width: 208px; }
-.w209 { width: 209px; }
-.w210 { width: 210px; }
-.w211 { width: 211px; }
-.w212 { width: 212px; }
-.w213 { width: 213px; }
-.w214 { width: 214px; }
-.w215 { width: 215px; }
-.w216 { width: 216px; }
-.w217 { width: 217px; }
-.w218 { width: 218px; }
-.w219 { width: 219px; }
-.w220 { width: 220px; }
-
-.red { background-color: red; }
-.green { background-color: green; }
-.blue { background-color: blue; }
-.yellow { background-color: yellow; }
-.orange { background-color: orange; }
-.purple { background-color: purple; }
-.pink { background-color: pink; }
-.brown { background-color: brown; }
-.cyan { background-color: cyan; }
-.magenta { background-color: magenta; }
-
-.black { background-color: black; }
-.white { background-color: white; }
-.gray-light { background-color: #d3d3d3; }
-.gray-medium { background-color: #808080; }
-.gray-dark { background-color: #404040; }
-
-.lime { background-color: lime; }
-.teal { background-color: teal; }
-.indigo { background-color: indigo; }
-.gold { background-color: gold; }
-.salmon { background-color: salmon; }
-
-.skyblue { background-color: skyblue; }
-.coral { background-color: coral; }
-.violet { background-color: violet; }
-.olive { background-color: olive; }
-.navy { background-color: navy; }
+.roso-prism-icons-vf {
+    font-family: 'roso-prism-icons-vf';
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
