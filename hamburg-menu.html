@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered X Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .hamburg-menu {
+            width: 60px;
+            aspect-ratio: 1/1;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hamburg_iteam {
+            width: 50px;
+            height: 5px;
+            background-color: black;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* 變叉叉 - 精準中心旋轉 */
+        .hamburg-menu.active #hamburg_iteam-1 {
+            transform: rotate(45deg) translate(0, 0);
+            position: absolute;
+        }
+
+        .hamburg-menu.active #hamburg_iteam-2 {
+            opacity: 0;
+        }
+
+        .hamburg-menu.active #hamburg_iteam-3 {
+            transform: rotate(-45deg) translate(0, 0);
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hamburg-menu" id="hamburg-menu">
+        <div class="hamburg_iteam" id="hamburg_iteam-1"></div>
+        <div class="hamburg_iteam" id="hamburg_iteam-2"></div>
+        <div class="hamburg_iteam" id="hamburg_iteam-3"></div>
+    </div>
+
+    <script>
+        const menu = document.getElementById('hamburg-menu');
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

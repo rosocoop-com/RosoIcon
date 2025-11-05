@@ -29,7 +29,9 @@ h3 {
     gap: 10px;
     justify-content: flex-start;
 }
-
+.infoText{
+    font-size: 9px;
+}
 .cardBox {
     box-sizing: border-box;
 

@@ -101,6 +101,12 @@
     mask: url(./icons/Logo-F-O_25_D.svg) no-repeat center;
     background-color: white;
 }
+.logo-F-O_25_D--new {
+    -webkit-mask: url(./icons/Logo-F-O_25_D--new.svg) no-repeat center;
+    mask: url(./icons/Logo-F-O_25_D--new.svg) no-repeat center;
+    background-color: white;
+}
+
 
 .logo-F-O_25_L {
     -webkit-mask: url(./icons/Logo-F-O_25_L.svg) no-repeat center;

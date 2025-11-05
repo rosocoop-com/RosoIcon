@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,11 @@
         @font-face {
             font-family: 'roso_icon';
             font-style: normal;
-            font-weight: 100 700; 
+            font-weight: 100 700;
             src: url(./roso_iconVF.woff2) format('woff2');
         }
+
         body {
-   
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,7 +25,7 @@
 
         .roso_icon {
             font-family: 'roso_icon';
-            font-weight: 100; 
+            font-weight: 100;
             font-style: normal;
             line-height: 1;
             letter-spacing: normal;
@@ -34,8 +35,9 @@
             word-wrap: normal;
             direction: ltr;
             color: #3f51b5;
-            font-size: 200px; 
+            font-size: 200px;
         }
+
         #weight-control {
             margin-top: 20px;
             width: 80%;
@@ -43,25 +45,37 @@
         }
     </style>
 </head>
+
 <body>
-    <h1 id="icon-display" class="roso_icon">cart</h1>
-    <label for="weight-slider">粗細：    <span id="current-weight">100</span>
-</label>
+    <div style="display: flex; gap: 100px;">
+        <p class="roso_icon">menu</p>
+        <p class="roso_icon">cart</p>
+        <p class="roso_icon">user</p>
+    </div>
+
+    <label for="weight-slider">粗細：<span id="current-weight">100</span></label>
     <input type="range" id="weight-slider" min="100" max="700" value="100" step="10">
+
     <script>
-        const iconElement = document.getElementById('icon-display');
+        const iconElements = document.getElementsByClassName('roso_icon');
         const slider = document.getElementById('weight-slider');
         const currentWeightSpan = document.getElementById('current-weight');
 
         function updateIconWeight(newWeight) {
-            iconElement.style.fontWeight = newWeight;
+            // 對所有 .roso_icon 元素套用字重
+            for (let i = 0; i < iconElements.length; i++) {
+                iconElements[i].style.fontWeight = newWeight;
+            }
             currentWeightSpan.textContent = newWeight;
         }
+
         slider.addEventListener('input', (event) => {
             const newWeight = event.target.value;
             updateIconWeight(newWeight);
         });
-        updateIconWeight(slider.value); 
+
+        updateIconWeight(slider.value);
     </script>
 </body>
+
 </html>
